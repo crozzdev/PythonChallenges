@@ -1,5 +1,6 @@
 from integer_sequence import sequence
 
+
 def test_sequence():
     assert sequence(5) == "12345"
     assert sequence(10) == "12345678910"

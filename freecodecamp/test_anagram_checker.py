@@ -1,22 +1,29 @@
 from anagram_checker import are_anagrams
 
+
 def test_are_anagrams_case_1():
-    assert are_anagrams("listen", "silent") == True
+    assert are_anagrams("listen", "silent")
+
 
 def test_are_anagrams_case_2():
-    assert are_anagrams("School master", "The classroom") == True
+    assert are_anagrams("School master", "The classroom")
+
 
 def test_are_anagrams_case_3():
-    assert are_anagrams("A gentleman", "Elegant man") == True
+    assert are_anagrams("A gentleman", "Elegant man")
+
 
 def test_are_anagrams_case_4():
-    assert are_anagrams("Hello", "World") == False
+    assert not are_anagrams("Hello", "World")
+
 
 def test_are_anagrams_case_5():
-    assert are_anagrams("apple", "banana") == False
+    assert not are_anagrams("apple", "banana")
+
 
 def test_are_anagrams_case_6():
-    assert are_anagrams("cat", "dog") == False
-  
+    assert not are_anagrams("cat", "dog")
+
+
 def test_are_anagramas_case_7():
-    assert are_anagrams("aab", "bba") == False
+    assert not are_anagrams("aab", "bba")

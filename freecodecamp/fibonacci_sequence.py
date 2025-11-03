@@ -6,11 +6,11 @@ def fibonacci_sequence(start_sequence: list, length: int) -> list:
 
     if length <= len(result):
         return result[:length]
-    
+
     for i in range(len(result), length):
-        next_number = result[i-2] + result[i-1]
+        next_number = result[i - 2] + result[i - 1]
         result.append(next_number)
-    
+
     return result
 
 
